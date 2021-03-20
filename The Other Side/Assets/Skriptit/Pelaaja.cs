@@ -16,13 +16,10 @@ public class Pelaaja : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
-
+   
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
 
     }
 
