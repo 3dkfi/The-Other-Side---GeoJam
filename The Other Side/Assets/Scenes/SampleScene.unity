@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8cebd4a6d54cc1949a68c7dfc7cb83a1, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: ed0a16666f448e747bfeaf7f66c7198d, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -423,7 +423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &240930824
 Transform:
   m_ObjectHideFlags: 0
@@ -740,6 +740,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heavenOn: 0
+  skyHeaven: {fileID: 2100000, guid: a594f57e5e7382b43a6d2525724ca95e, type: 2}
+  skyHell: {fileID: 2100000, guid: a4ff3235e716dfa45b7a1a6e7082cd9e, type: 2}
 --- !u!1 &1168425981
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +849,7 @@ GameObject:
   - component: {fileID: 1462631419}
   - component: {fileID: 1462631418}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: pilvet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,7 +1173,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 20
+      scalar: 30
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5642,7 +5644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462631417}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -3.8, z: -0.5}
+  m_LocalPosition: {x: 0, y: -0.8, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5711,6 +5713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pelaaja: {fileID: 2486739389871957282}
+  heavenMaterial: {fileID: 2100000, guid: c276cc75a5d54424a896fc716d0ed538, type: 2}
+  hellMaterial: {fileID: 2100000, guid: f8e83c66a431f9b4498de1227d6f24b4, type: 2}
 --- !u!4 &2028102792
 Transform:
   m_ObjectHideFlags: 0
@@ -5837,7 +5841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 123
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &497261448765774297
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,12 +7,16 @@ public class Kamera : MonoBehaviour
     Camera _camera;
     public bool heavenOn;
 
+    public Material skyHeaven;
+    public Material skyHell;
+
     private void Start()
     {
         _camera = Camera.main;
+        RenderSettings.skybox = skyHeaven;
     }
 
-    void Update()
+   /* void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -23,10 +27,14 @@ public class Kamera : MonoBehaviour
         if (heavenOn)
         {
             _camera.cullingMask = ~(1 << LayerMask.NameToLayer("heaven"));
-            PelaajaManageri.instance.pelaaja.GetComponent<Renderer>().material.color = Color.white;
+            //PelaajaManageri.instance.pelaaja.GetComponent<Renderer>().material.color = Color.white;
+            RenderSettings.skybox = skyHeaven;
+            DynamicGI.UpdateEnvironment();
         }
         else if (!heavenOn)
             _camera.cullingMask = ~(1 << LayerMask.NameToLayer("hell"));
-        PelaajaManageri.instance.pelaaja.GetComponent<Renderer>().material.color = Color.red;
-    }
+         RenderSettings.skybox = skyHell;
+        DynamicGI.UpdateEnvironment();
+        //PelaajaManageri.instance.pelaaja.GetComponent<Renderer>().material.color = Color.red;
+    }*/
 }
